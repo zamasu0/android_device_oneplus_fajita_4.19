@@ -25,7 +25,7 @@ $(call inherit-product, device/oneplus/fajita/device.mk)
 $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 TARGET_USES_PICO_GAPPS := true
-
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 PRODUCT_NAME := derp_fajita
 PRODUCT_DEVICE := fajita
 PRODUCT_MANUFACTURER := OnePlus
