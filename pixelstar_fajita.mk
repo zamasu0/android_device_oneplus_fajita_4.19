@@ -21,10 +21,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from fajita device
 $(call inherit-product, device/oneplus/fajita/device.mk)
 
-# Inherit some common PixelOS stuff.
+# Inherit some common pixelstar stuff.
 $(call inherit-product, vendor/pixelstar/config/common_full_phone.mk)
 
-# PixelExperience Stuff
+# pixelstar Stuff
+USE_PIXEL_CHARGER := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_CLEAR_CALLING := true
+TARGET_SUPPORTS_QUICK_TAP  := true
 TARGET_BOOT_ANIMATION_RES := 1080
 PRODUCT_NAME := pixelstar_fajita
 
